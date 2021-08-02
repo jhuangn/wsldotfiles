@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases to easily turn on and off proxy
 # Different port for each system
 if uname -a|grep -q microsoft; then
-    alias proxy="export http_proxy=$http://(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2):10809 && export https_proxy=http://$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2):10809"
+    alias proxy="export http_proxy=http://$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2):10809 && export https_proxy=http://$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2):10809"
     alias noproxy="export http_proxy= && export https_proxy="
 else
     alias proxy="export http_proxy=http://127.0.0.1:10809 && export https_proxy=http://127.0.0.1:10809"
