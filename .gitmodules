@@ -54,3 +54,6 @@
 [submodule "vim/pack/vendor/start/markdown-preview.nvim"]
 	path = vim/pack/vendor/start/markdown-preview.nvim
 	url = https://github.com/iamcco/markdown-preview.nvim
+[submodule "vim/pack/vendor/start/vim-snippets"]
+	path = vim/pack/vendor/start/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
